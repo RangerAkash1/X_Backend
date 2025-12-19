@@ -32,4 +32,7 @@ public class SwaggerConfig {
                 .version("1.0.0")
                 .build();
     }
+
+    public static final String AUTHORIZATION_HEADER = "Authorization";
+    
 }
