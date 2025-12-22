@@ -1,3 +1,6 @@
+package com.example.Backend.config;
+import com.example.Backend.filter.JwtFilter;
+import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -37,4 +40,3 @@ public class SecurityConfig {
     }
 }
 
-package com.example.Backend.config;
