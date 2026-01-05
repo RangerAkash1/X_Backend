@@ -48,4 +48,13 @@ public class SampleDTO {
     public void setStatus(String status) {
         this.status = status;
     }
+
+    public static SampleDTO fromEntity(com.example.Backend.model.entity.SampleEntity entity) {
+        return new SampleDTO(
+            entity.getId(),
+            entity.getName(),
+            entity.getDescription(),
+            "default" // Default value for status
+        );
+    }
 }
